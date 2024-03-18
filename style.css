@@ -1,0 +1,62 @@
+* {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+
+.h1 {
+    font-size: 50px;
+    background-color: saddlebrown;
+}
+.h1 :hover {
+    color: aqua;
+    font-size: 15px;
+}
+.p {
+    font-size: 30px;
+    background-color: blueviolet;
+    color: red;
+}
+.p :hover{
+    color: green;
+    text-align: center;
+    font-size: 100px;
+}
+.img:hover{
+    transform: rotate(1080deg);
+    transition: 1000s;
+    animation: img 10s infinite;
+}
+
+#snhag {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes img{
+    20% {
+        transform: rotate(0deg);
+        width: 90%;
+        border-radius: 100% 100% 100% 100%;
+        filter: contrast(30);
+    }
+    50% {
+        transform: rotate(360deg);
+        width: 50%;
+        border-radius: 0 0 100% 0;
+        filter: contrast(300);
+    }
+    70% {
+        transform: rotate(17000deg) scale(2);
+        border-radius: 100% 100% 0 0;
+        }
+    90% {
+        transform: rotate(100deg) scale(1);
+        border-radius: 100% 0 100% 0;
+    }
+    100% {
+        transition: rotate(0deg) scale(3);
+        border-radius: 60% 0 40% 90% 0;
+    }
+}
+
