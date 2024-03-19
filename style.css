@@ -1,7 +1,6 @@
 * {
      margin: 0;
      padding: 0;
-     overflow: hidden;
 }
 
 .h1 {
@@ -58,5 +57,29 @@
         transition: rotate(0deg) scale(3);
         border-radius: 60% 0 40% 90% 0;
     }
+}
+
+@keyframes sindreimg{
+    100% {
+        transition: rotate(1800deg);
+    }
+}
+
+.sindre {
+    font-size: 80px;
+    color: darkslategrey;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+.sindre :hover {
+    background-color: blueviolet;
+    color: aqua;
+    font-size: 60px;
+}
+
+.sindreimg :hover {
+    transition: 100s;
+    animation: sindreimg 10s infinite;
 }
 
